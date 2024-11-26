@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.botecofx.AdmController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="_CADASTROS">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onCadProduto" text="_PRODUTO" />
+                  <MenuItem mnemonicParsing="false" onAction="#onCadCategoria" text="_CATEGORIA" />
+                  <MenuItem mnemonicParsing="false" onAction="#onCadUnidade" text="_UNIDADE" />
+                  <MenuItem mnemonicParsing="false" onAction="#onCadTpPagamento" text="_TIPO DE PAGAMENTO" />
+                  <MenuItem mnemonicParsing="false" onAction="#onCadGarcom" text="_GARCOM..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onFechar" text="_FECHAR" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="_RELATORIOS">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onRelListaPreco" text="_LISTA DE PREÇOS" />
+                  <MenuItem mnemonicParsing="false" onAction="#onRelProdutos" text="_RELAÇÃO DE PRODUTOS" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="_SISTEMA">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onBackup" text="_BACKUP" />
+                  <MenuItem mnemonicParsing="false" onAction="#onRestore" text="_RESTORE" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="_AJUDA">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="SOBRE" />
+                  <MenuItem mnemonicParsing="false" onAction="#onAjuda" text="AJUDA DO SISTEMA BOTECOFX" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
